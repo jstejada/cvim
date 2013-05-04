@@ -1,0 +1,19 @@
+ for cvim   ##             
+#####################
+
+#cvim's index
+/homepage
+
+#lists all cvs of current user
+/cvs
+#shows details for a specific CV
+/cvs/:id
+
+#lists all experiences
+/experiences
+
+#shows my friends
+/friends
+#Shows a friend with :id and his cvs
+/friends/:id
+
