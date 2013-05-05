@@ -6,7 +6,12 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'cvim.views.home', name='home'),
+    url(r'^$', 'cvimapp.views.index'),
+    url(r'^cvs/$', 'cvimapp.views.list_cvs'),
+    url(r'^cvs/(?P<cv_id>\d+)', 'cvimapp.views.detail_cv'),
+    url(r'^experiences/$', 'cvimapp.views.list_experiences'),
+    url(r'^friends/$', 'cvimapp.views.list_friends'),
+    url(r'^friend/(?P<friend_id>\d+)', 'cvimapp.views.detail_friend'),
     # url(r'^cvim/', include('cvim.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

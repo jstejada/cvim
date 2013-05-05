@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class User(models.Model):
     name = models.CharField(max_length=128)
-
+    fb_id = models.CharField(max_length=128)
     def __unicode__(self):
         return self.name
     
