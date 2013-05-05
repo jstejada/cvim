@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CVIM is Curriculum Vitae improved</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome.min.css">
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="bootstrap/js/html5shiv.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">CV<i>im</i></a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#"><i class="icon-file"></i> CVs</a></li>
+              <li><a href="#about"><i class="icon-magic"></i> experience</a></li>
+              <li><a href="#about"><i class="icon-user"></i> friends</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+</div>
+
+    <div class="hero-unit">
+      <h2><i class="icon-file"></i> CVs <small> personalize your job applications </small></h2>  
+    </div>
+    <div class="container">
+        <div class="row">
+          <div class="span3">
+            <h4><i class="icon-magic"></i> Your experiences </h4>
+            <div class="experience-small">
+              <p>5 años de experience en xys</p>
+            </div>
+            <div class="experience-small">
+              <p>5 años de experience en xys</p>
+            </div>
+            <div class="experience-small">
+              <p>5 años de experience en xys</p>
+            </div>
+          </div>
+
+          <div class="span9">
+          <ul class="cvs">
+            <li>
+              <h2>Google Resume</h2>
+              <p><span class="label label-inverse"> bio <span class="badge badge-info">0</span> </span> </p>
+              <p><span class="label label-inverse"> academic <span class="badge badge-info">0</span> </span> </p>
+              <p><span class="label label-inverse"> work experience <span class="badge badge-info">0</span> </span> </p>
+              <p><span class="label label-inverse"> personal proyects <span class="badge badge-info">0</span> </span> </p>
+              <p><span class="label label-inverse"> other <span class="badge badge-info">0</span> </span> </p>
+            </li>
+            <li>
+              <h2>Microsoft Resume</h2>
+              <p><span class="label label-inverse"> bio <span class="badge badge-info">0</span> </span> </p>
+              <p><span class="label label-inverse"> academic <span class="badge badge-info">0</span> </span> </p>
+              <p><span class="label label-inverse"> work experience <span class="badge badge-info">0</span> </span> </p>
+              <p><span class="label label-inverse"> personal proyects <span class="badge badge-info">0</span> </span> </p>
+              <p><span class="label label-inverse"> other <span class="badge badge-info">0</span> </span> </p>
+            </li>
+            <li>
+              <h2>Rovio resume</h2>
+              <p><span class="label label-inverse"> bio <span class="badge badge-info">0</span> </span> </p>
+              <p><span class="label label-inverse"> academic <span class="badge badge-info">0</span> </span> </p>
+              <p><span class="label label-inverse"> work experience <span class="badge badge-info">0</span> </span> </p>
+              <p><span class="label label-inverse"> personal proyects <span class="badge badge-info">0</span> </span> </p>
+              <p><span class="label label-inverse"> other <span class="badge badge-info">0</span> </span> </p>
+            </li>
+            <li>
+              <h2>2013 Resume</h2>
+              <p><span class="label label-inverse"> bio <span class="badge badge-info">0</span> </span> </p>
+              <p><span class="label label-inverse"> academic <span class="badge badge-info">0</span> </span> </p>
+              <p><span class="label label-inverse"> work experience <span class="badge badge-info">0</span> </span> </p>
+              <p><span class="label label-inverse"> personal proyects <span class="badge badge-info">0</span> </span> </p>
+              <p><span class="label label-inverse"> other <span class="badge badge-info">0</span> </span> </p>
+            </li>
+          </ul>  
+        </div>
+        </div>
+        
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="bootstrap/js/experience.js"></script>
+    <!-- JQuery UI -->
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+    <script type="text/javascript">
+      $('.experience-small').draggable({ revert: true });
+      $('.label-inverse').droppable({
+        activeClass: "ui-state-default",
+        hoverClass: "ui-state-hover",
+        accept: ":not(.ui-sortable-helper)",
+        drop: function( event, ui ) {
+          var numStr = $( this ).find('.badge').text();
+          var num = parseInt(numStr)+1;
+          $( this ).find('.badge').text(num); 
+      }
+    })
+    </script>
+  </body>
+</html>

@@ -6156,3 +6156,86 @@ a.badge:focus {
 .affix {
   position: fixed;
 }
+
+
+.experience-small{
+  
+  border: 1px solid #feeeee;
+  border-radius: 4px;
+  background-color: #eee;
+  padding-left: 9px;
+  padding-top: 6px;
+  margin: 4px;
+
+}
+
+.cvs{
+  list-style-type: none;
+}
+
+.cvs li{
+  border: 1px solid #feeeee;
+  border-radius: 4px;
+  background-color: #eee;
+  padding-left: 9px;
+  padding-top: 6px;
+  margin: 10px;
+  float:left;
+  min-width: 40%;
+}
+
+.cvs li{
+  
+}
+
+
+.cvs li > p > span{
+  padding: 8px;
+  width: 85%;
+}
+
+.cvs li > p > span > span{
+  float: right;
+}
+
+.ui-state-default{
+  background-color: #444;
+}
+
+.ui-state-hover{
+  background-color: green;
+}
+
+.cv{
+  border: 1px solid #feeeee;
+  border-radius: 4px;
+  background-color: #eee;
+  float:left;
+  min-width: 100%;
+}
+
+.cv h1{
+  padding: 5px;
+  padding-left: 20px;
+}
+
+.cv div > div:first-child{
+  border-radius: 0px;
+  width: 96%;
+  background-color: #333;
+  color: white;
+  padding: 17px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.category-experiences{
+  margin-left: 15px;
+}
+
+.cv div > div > span{
+  float: right;
+}
+
